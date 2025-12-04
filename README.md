@@ -1,18 +1,21 @@
-# Apron Design MiniProgram
+# Apron Design WeChat MiniProgram Component Library
 
-Apron Design 微信小程序组件库，基于 React 版本的 Apron Design 组件库移植而来。
+Apron Design WeChat MiniProgram Component Library, ported from the React version of Apron Design component library.
 
-## 特性
+## DEMO WeChat MiniProgram
+![DEMO](./assets/gh_a909923ee0d8_430.jpg)
 
-- 🎨 丰富的组件库
-- 📱 微信小程序原生支持
-- 🎯 TypeScript 友好的 API 设计
-- 📖 完善的文档
-- 🎭 统一的视觉风格
+## Features
 
-## 安装
+- 🎨 Rich component library (37+ components)
+- 📱 Native WeChat MiniProgram support
+- 🎯 Friendly API design
+- 📖 Comprehensive documentation
+- 🎭 Unified visual style
 
-将 `components` 目录复制到你的小程序项目中，然后在 `app.json` 中配置：
+## Installation
+
+Copy the `components` directory to your MiniProgram project, then configure it in `app.json`:
 
 ```json
 {
@@ -26,23 +29,23 @@ Apron Design 微信小程序组件库，基于 React 版本的 Apron Design 组�
 }
 ```
 
-## 快速开始
+## Quick Start
 
-### 使用 Button 组件
+### Using Button Component
 
 ```xml
 <apron-button variant="primary" bindtap="handleTap">Click Me</apron-button>
 ```
 
-### 使用 Message 组件
+### Using Message Component
 
-首先在页面的 wxml 中添加：
+First, add the following to your page's wxml:
 
 ```xml
 <apron-message id="apron-message-container"></apron-message>
 ```
 
-然后在页面的 js 中：
+Then in your page's js:
 
 ```javascript
 const message = require('../../utils/message');
@@ -57,34 +60,75 @@ Page({
     }, 100);
   },
   showMessage() {
-    message.success('操作成功！');
+    message.success('Operation successful!');
   }
 });
 ```
 
-## 组件列表
+## Component List
 
-- [Button 按钮](./docs/button.md)
-- [Alert 警告提示](./docs/alert.md)
-- [Message 全局提示](./docs/message.md)
-- [Input 输入框](./docs/input.md)
-- [Modal 对话框](./docs/modal.md)
+### Basic Components
+- [Button](./docs/button.md) - Button component
+- [Avatar](./docs/avatar.md) - User avatar display
+- [Badge](./docs/badge.md) - Badge with dot, number or text in the top-right corner
+- [Card](./docs/card.md) - Universal card container
+- [Divider](./docs/divider.md) - Divider for separating content
+- [Empty](./docs/empty.md) - Empty state placeholder
+- [Image](./docs/image.md) - Image display component
+- [Link](./docs/link.md) - Hyperlink component
+- [Space](./docs/space.md) - Set spacing between components
+- [Tag](./docs/tag.md) - Tag for marking and selection
 
-## 开发
+### Feedback Components
+- [Alert](./docs/alert.md) - Alert component
+- [Message](./docs/message.md) - Global message component
+- [Modal](./docs/modal.md) - Modal dialog component
+- [Drawer](./docs/drawer.md) - Drawer panel sliding from screen edge
+- [Spin](./docs/spin.md) - Loading spinner for pages and blocks
+- [Skeleton](./docs/skeleton.md) - Skeleton screen for loading states
+- [Toast](./docs/toast.md) - Lightweight feedback/toast
+- [Popover](./docs/popover.md) - Popover card that appears on click/hover
+- [Tooltip](./docs/tooltip.md) - Simple text tooltip bubble
 
-本项目包含一个完整的 demo 小程序，可以直接在微信开发者工具中打开 `miniprogram` 目录进行预览。
+### Form Components
+- [Input](./docs/input.md) - Input component
+- [Textarea](./docs/textarea.md) - Multi-line text input
+- [InputOtp](./docs/input-otp.md) - One-time password input
+- [Checkbox](./docs/checkbox.md) - Checkbox component
+- [Radio](./docs/radio.md) - Radio button component
+- [Select](./docs/select.md) - Dropdown selector
+- [Switch](./docs/switch.md) - Switch selector
+- [DatePicker](./docs/date-picker.md) - Date picker
+- [Cascader](./docs/cascader.md) - Cascader selector
+- [Rate](./docs/rate.md) - Rating component
+- [Form](./docs/form.md) - Form component
 
-### 运行 Demo
+### Layout Components
+- [Grid](./docs/grid.md) - 24-column grid system
+- [Collapse](./docs/collapse.md) - Collapsible content area
+- [Tabs](./docs/tabs.md) - Tab switching component
+- [Steps](./docs/steps.md) - Step indicator for guiding users through a process
+- [Timeline](./docs/timeline.md) - Vertical timeline for displaying time-based information
 
-1. 使用微信开发者工具打开 `miniprogram` 目录
-2. 配置 AppID: `wx23532ffebd20e997`
-3. 编译运行
+### Other Components
+- [Pagination](./docs/pagination.md) - Pagination for long lists
+- [ResponsiveModal](./docs/responsive-modal.md) - Responsive modal that automatically switches between Modal/Drawer based on screen size
 
-## 设计规范
+## Development
 
-组件库遵循 Apron Design 设计规范，使用统一的设计令牌（Design Tokens）。
+This project includes a complete demo MiniProgram that can be opened directly in WeChat Developer Tools for preview.
 
-### 颜色
+### Running the Demo
+
+1. Open the `miniprogram` directory in WeChat Developer Tools
+2. Configure AppID: `wx23532ffebd20e997`
+3. Compile and run
+
+## Design Guidelines
+
+The component library follows Apron Design guidelines and uses unified design tokens.
+
+### Colors
 
 - Primary: `#393939`
 - Secondary: `#4C9EEA`
@@ -92,11 +136,11 @@ Page({
 - Warning: `#f59e0b`
 - Error: `#ef4444`
 
-### 间距
+### Spacing
 
-使用 4px 基础单位的间距系统：4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+Spacing system based on 4px unit: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
 
-### 圆角
+### Border Radius
 
 - sm: 4rpx
 - md: 6rpx
@@ -104,11 +148,10 @@ Page({
 - xl: 12rpx
 - 2xl: 16rpx
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request。
+Issues and Pull Requests are welcome.
 
-## 许可证
+## License
 
 MIT
-

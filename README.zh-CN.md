@@ -2,6 +2,9 @@
 
 Apron Design 微信小程序组件库，基于 React 版本的 Apron Design 组件库移植而来。
 
+## DEMO 微信小程序
+![DEMO](./assets/gh_a909923ee0d8_430.jpg)
+
 ## 特性
 
 - 🎨 丰富的组件库（37+ 组件）
