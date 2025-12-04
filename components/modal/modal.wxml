@@ -1,0 +1,18 @@
+<view wx:if="{{visible}}" class="apron-modal {{visible ? 'apron-modal--show' : ''}}" catchtap="handleMaskTap">
+  <view class="apron-modal__container" catchtap="stopPropagation">
+    <view wx:if="{{showClose}}" class="apron-modal__close" bindtap="handleClose">×</view>
+    <view wx:if="{{title}}" class="apron-modal__header">
+      <view class="apron-modal__title">{{title}}</view>
+    </view>
+    <view class="apron-modal__body">
+      <slot name="content"></slot>
+    </view>
+    <view wx:if="{{showFooter}}" class="apron-modal__footer">
+      <slot name="footer">
+        <button class="apron-modal__btn apron-modal__btn--cancel" bindtap="handleCancel">取消</button>
+        <button class="apron-modal__btn apron-modal__btn--confirm" bindtap="handleConfirm">确定</button>
+      </slot>
+    </view>
+  </view>
+</view>
+

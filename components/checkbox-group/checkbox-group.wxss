@@ -1,0 +1,16 @@
+@import '../../styles/variables.wxss';
+
+.apron-checkbox-group {
+  display: inline-flex;
+  gap: var(--spacing-4);
+}
+
+.apron-checkbox-group.horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.apron-checkbox-group.vertical {
+  flex-direction: column;
+}
+

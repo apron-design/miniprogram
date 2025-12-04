@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Spin 加载中",
+  "usingComponents": {
+    "apron-spin": "../../../components/spin/spin"
+  }
+}

@@ -1,0 +1,97 @@
+@import '../../styles/variables.wxss';
+
+.apron-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.apron-switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.apron-switch__track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-50);
+  transition: background-color 0.2s ease;
+}
+
+.apron-switch.checked .apron-switch__track {
+  background-color: var(--color-primary-500);
+}
+
+.apron-switch.secondary.checked .apron-switch__track {
+  background-color: var(--color-secondary-500);
+}
+
+.apron-switch.disabled .apron-switch__track {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.apron-switch__thumb {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+
+.apron-switch.default .apron-switch__track {
+  width: 88rpx;
+  height: 48rpx;
+}
+
+.apron-switch.default .apron-switch__thumb {
+  width: 40rpx;
+  height: 40rpx;
+  left: 4rpx;
+}
+
+.apron-switch.default.checked .apron-switch__thumb {
+  transform: translateX(40rpx);
+}
+
+.apron-switch.small .apron-switch__track {
+  width: 72rpx;
+  height: 40rpx;
+}
+
+.apron-switch.small .apron-switch__thumb {
+  width: 32rpx;
+  height: 32rpx;
+  left: 4rpx;
+}
+
+.apron-switch.small.checked .apron-switch__thumb {
+  transform: translateX(32rpx);
+}
+
+.apron-switch.mini .apron-switch__track {
+  width: 56rpx;
+  height: 32rpx;
+}
+
+.apron-switch.mini .apron-switch__thumb {
+  width: 24rpx;
+  height: 24rpx;
+  left: 4rpx;
+}
+
+.apron-switch.mini.checked .apron-switch__thumb {
+  transform: translateX(24rpx);
+}
+

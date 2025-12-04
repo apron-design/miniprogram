@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Badge 徽标",
+  "usingComponents": {
+    "apron-badge": "../../../components/badge/badge"
+  }
+}
+

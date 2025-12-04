@@ -1,0 +1,7 @@
+<view class="apron-avatar {{size}} {{square ? 'square' : ''}} {{customClass}}" style="{{customStyle}}">
+  <image wx:if="{{src}}" src="{{src}}" mode="aspectFill" class="apron-avatar__image" />
+  <view wx:else class="apron-avatar__content">
+    <slot></slot>
+  </view>
+</view>
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Cascader 级联选择",
+  "usingComponents": {
+    "apron-cascader": "../../../components/cascader/cascader"
+  }
+}

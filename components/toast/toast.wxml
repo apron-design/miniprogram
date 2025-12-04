@@ -1,0 +1,18 @@
+<view wx:if="{{visible}}" class="apron-toast__overlay">
+  <view class="apron-toast {{visible && !isAnimating ? 'visible' : ''}} {{isAnimating ? (visible ? 'entering' : 'leaving') : ''}}">
+    <view class="apron-toast__content">
+      <view class="apron-toast__icon">
+        <view wx:if="{{type === 'success'}}">✓</view>
+        <view wx:elif="{{type === 'fail'}}">✕</view>
+        <view wx:elif="{{type === 'danger'}}">⚠</view>
+        <view wx:elif="{{type === 'loading'}}" class="apron-toast__loading-icon">⟳</view>
+        <slot wx:else name="icon"></slot>
+      </view>
+      <view wx:if="{{text}}" class="apron-toast__text">{{text}}</view>
+      <view wx:else class="apron-toast__text">
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+</view>
+

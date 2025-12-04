@@ -1,0 +1,4 @@
+<view wx:if="{{isActive}}" class="apron-tabs__panel {{customClass}}" style="{{customStyle}}" role="tabpanel">
+  <slot></slot>
+</view>
+

@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-button variant="primary">Primary</apron-button>
+      <apron-button variant="secondary">Secondary</apron-button>
+      <apron-button variant="default">Default</apron-button>
+      <apron-button variant="text">Text</apron-button>
+      <apron-button variant="link">Link</apron-button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">尺寸</view>
+    <view class="demo">
+      <apron-button variant="primary" size="sm">Small</apron-button>
+      <apron-button variant="primary" size="md">Medium</apron-button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">状态</view>
+    <view class="demo">
+      <apron-button variant="primary" loading="{{true}}">Loading</apron-button>
+      <apron-button variant="primary" disabled="{{true}}">Disabled</apron-button>
+      <apron-button variant="primary" danger="{{true}}">Danger</apron-button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">块级按钮</view>
+    <view class="demo">
+      <apron-button variant="primary" block="{{true}}">Block Button</apron-button>
+    </view>
+  </view>
+</view>
+

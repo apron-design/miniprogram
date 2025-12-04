@@ -1,0 +1,68 @@
+@import '../../styles/variables.wxss';
+
+.apron-textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: var(--font-size-base);
+  box-sizing: border-box;
+}
+
+.apron-textarea__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.apron-textarea__inner {
+  width: 100%;
+  min-height: 120rpx;
+  padding: var(--spacing-3) var(--spacing-4);
+  background-color: var(--color-primary-50);
+  border: 1px solid var(--color-primary-50);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  color: var(--color-primary-500);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.apron-textarea.active .apron-textarea__inner {
+  background-color: #ffffff;
+  border-color: var(--color-primary-500);
+}
+
+.apron-textarea.disabled .apron-textarea__inner {
+  background-color: var(--color-neutral-100);
+  border-color: var(--color-neutral-200);
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+}
+
+.apron-textarea__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+}
+
+.apron-textarea__count {
+  color: var(--color-neutral-500);
+}
+
+.apron-textarea__clear-btn {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  color: var(--color-neutral-400);
+  cursor: pointer;
+}
+
+.apron-textarea__clear-btn:active {
+  color: var(--color-neutral-500);
+}
+

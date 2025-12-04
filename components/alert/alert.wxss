@@ -1,0 +1,70 @@
+@import '../../styles/variables.wxss';
+
+.apron-alert {
+  display: flex;
+  align-items: center;
+  min-width: 600rpx;
+  max-width: 1000rpx;
+  min-height: 80rpx;
+  padding: var(--spacing-2) var(--spacing-4);
+  margin-bottom: var(--spacing-3);
+  background-color: #ffffff;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  box-sizing: border-box;
+}
+
+.apron-alert__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: var(--spacing-3);
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  font-size: 28rpx;
+  font-weight: var(--font-weight-semibold);
+  color: #FFFFFF;
+}
+
+.apron-alert__icon-info {
+  background-color: var(--color-secondary-500);
+}
+
+.apron-alert__icon-success {
+  background-color: var(--color-success-500);
+}
+
+.apron-alert__icon-warning {
+  background-color: var(--color-warning-500);
+}
+
+.apron-alert__icon-error {
+  background-color: var(--color-error-500);
+}
+
+.apron-alert__message {
+  flex: 1;
+  color: var(--color-primary-500);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.apron-alert.info {
+  border-left: 4rpx solid var(--color-secondary-500);
+}
+
+.apron-alert.success {
+  border-left: 4rpx solid var(--color-success-500);
+}
+
+.apron-alert.warning {
+  border-left: 4rpx solid var(--color-warning-500);
+}
+
+.apron-alert.error {
+  border-left: 4rpx solid var(--color-error-500);
+}
+

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Apron Design",
+  "usingComponents": {
+    "apron-message": "../../components/message/message"
+  }
+}
+

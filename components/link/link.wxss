@@ -1,0 +1,45 @@
+@import '../../styles/variables.wxss';
+
+.apron-link {
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.apron-link.primary {
+  color: var(--color-primary-500);
+}
+
+.apron-link.primary.apron-link--hover {
+  color: var(--color-primary-400);
+}
+
+.apron-link.secondary {
+  color: var(--color-secondary-500);
+}
+
+.apron-link.secondary.apron-link--hover {
+  color: var(--color-secondary-600);
+}
+
+.apron-link.underline-always {
+  text-decoration: underline;
+}
+
+.apron-link.underline-hover.apron-link--hover {
+  text-decoration: underline;
+}
+
+.apron-link.underline-never {
+  text-decoration: none;
+}
+
+.apron-link.danger {
+  color: var(--color-error-600);
+}
+
+.apron-link.danger.apron-link--hover {
+  color: var(--color-error-500);
+}
+

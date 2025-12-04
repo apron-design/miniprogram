@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "ResponsiveModal 响应式对话框",
+  "usingComponents": {
+    "apron-responsive-modal": "../../../components/responsive-modal/responsive-modal"
+  }
+}

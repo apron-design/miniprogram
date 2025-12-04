@@ -1,0 +1,97 @@
+/* ============================================
+   Design Tokens - Apron Design System
+   ============================================ */
+
+page {
+  /* Colors - Primary */
+  --color-primary-50: #f8f8f8;
+--color-primary-100: #e8e8e8;
+--color-primary-200: #c8c8c8;
+--color-primary-300: #999999;
+--color-primary-400: #666666;
+--color-primary-500: #393939;
+--color-primary-600: #2b2b2b;
+--color-primary-700: #1d1d1d;
+--color-primary-800: #0e0e0e;
+--color-primary-900: #000000;
+
+/* Colors - Secondary */
+--color-secondary-50: #F0F7FE;
+--color-secondary-100: #DBE9FC;
+--color-secondary-200: #B8D4F8;
+--color-secondary-300: #8FBEF3;
+--color-secondary-400: #6DAEEF;
+--color-secondary-500: #4C9EEA;
+--color-secondary-600: #3182CE;
+--color-secondary-700: #2468AC;
+--color-secondary-800: #1A4E85;
+--color-secondary-900: #133660;
+
+/* Colors - Neutral */
+--color-neutral-50: #fafafa;
+--color-neutral-100: #f4f4f5;
+--color-neutral-200: #e4e4e7;
+--color-neutral-300: #d4d4d8;
+--color-neutral-400: #a1a1aa;
+--color-neutral-500: #71717a;
+--color-neutral-600: #52525b;
+--color-neutral-700: #3f3f46;
+--color-neutral-800: #27272a;
+--color-neutral-900: #18181b;
+
+/* Colors - Semantic */
+--color-success-500: #22c55e;
+--color-success-600: #1BBA48;
+--color-warning-500: #f59e0b;
+--color-warning-600: #d97706;
+--color-error-500: #ef4444;
+--color-error-600: #c11717;
+--color-error-700: #a31212;
+--color-info-500: #06b6d4;
+--color-info-600: #0891b2;
+
+/* Spacing */
+--spacing-0: 0;
+--spacing-1: 4rpx;
+--spacing-2: 8rpx;
+--spacing-3: 12rpx;
+--spacing-4: 16rpx;
+--spacing-5: 20rpx;
+--spacing-6: 24rpx;
+--spacing-8: 32rpx;
+--spacing-10: 40rpx;
+--spacing-12: 48rpx;
+
+/* Border Radius */
+--radius-none: 0;
+--radius-sm: 4rpx;
+--radius-md: 6rpx;
+--radius-lg: 8rpx;
+--radius-xl: 12rpx;
+--radius-2xl: 16rpx;
+--radius-full: 9999rpx;
+
+/* Font Size */
+--font-size-xs: 24rpx;
+--font-size-sm: 28rpx;
+--font-size-base: 32rpx;
+--font-size-lg: 36rpx;
+--font-size-xl: 40rpx;
+--font-size-2xl: 48rpx;
+--font-size-3xl: 60rpx;
+
+/* Font Weight */
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+/* Z-index */
+--z-index-dropdown: 1000;
+--z-index-sticky: 1020;
+--z-index-fixed: 1030;
+--z-index-modal-backdrop: 1040;
+--z-index-modal: 1050;
+--z-index-popover: 1060;
+--z-index-tooltip: 1070;
+}

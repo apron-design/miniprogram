@@ -1,0 +1,106 @@
+@import '../../styles/variables.wxss';
+
+.apron-col {
+  position: relative;
+  max-width: 100%;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+
+/* 基础栅格类 */
+.apron-col-0 { display: none; }
+.apron-col-1 { display: block; flex: 0 0 4.166667%; max-width: 4.166667%; }
+.apron-col-2 { display: block; flex: 0 0 8.333333%; max-width: 8.333333%; }
+.apron-col-3 { display: block; flex: 0 0 12.5%; max-width: 12.5%; }
+.apron-col-4 { display: block; flex: 0 0 16.666667%; max-width: 16.666667%; }
+.apron-col-5 { display: block; flex: 0 0 20.833333%; max-width: 20.833333%; }
+.apron-col-6 { display: block; flex: 0 0 25%; max-width: 25%; }
+.apron-col-7 { display: block; flex: 0 0 29.166667%; max-width: 29.166667%; }
+.apron-col-8 { display: block; flex: 0 0 33.333333%; max-width: 33.333333%; }
+.apron-col-9 { display: block; flex: 0 0 37.5%; max-width: 37.5%; }
+.apron-col-10 { display: block; flex: 0 0 41.666667%; max-width: 41.666667%; }
+.apron-col-11 { display: block; flex: 0 0 45.833333%; max-width: 45.833333%; }
+.apron-col-12 { display: block; flex: 0 0 50%; max-width: 50%; }
+.apron-col-13 { display: block; flex: 0 0 54.166667%; max-width: 54.166667%; }
+.apron-col-14 { display: block; flex: 0 0 58.333333%; max-width: 58.333333%; }
+.apron-col-15 { display: block; flex: 0 0 62.5%; max-width: 62.5%; }
+.apron-col-16 { display: block; flex: 0 0 66.666667%; max-width: 66.666667%; }
+.apron-col-17 { display: block; flex: 0 0 70.833333%; max-width: 70.833333%; }
+.apron-col-18 { display: block; flex: 0 0 75%; max-width: 75%; }
+.apron-col-19 { display: block; flex: 0 0 79.166667%; max-width: 79.166667%; }
+.apron-col-20 { display: block; flex: 0 0 83.333333%; max-width: 83.333333%; }
+.apron-col-21 { display: block; flex: 0 0 87.5%; max-width: 87.5%; }
+.apron-col-22 { display: block; flex: 0 0 91.666667%; max-width: 91.666667%; }
+.apron-col-23 { display: block; flex: 0 0 95.833333%; max-width: 95.833333%; }
+.apron-col-24 { display: block; flex: 0 0 100%; max-width: 100%; }
+
+/* offset 类 */
+.apron-col-offset-1 { margin-left: 4.166667%; }
+.apron-col-offset-2 { margin-left: 8.333333%; }
+.apron-col-offset-3 { margin-left: 12.5%; }
+.apron-col-offset-4 { margin-left: 16.666667%; }
+.apron-col-offset-5 { margin-left: 20.833333%; }
+.apron-col-offset-6 { margin-left: 25%; }
+.apron-col-offset-7 { margin-left: 29.166667%; }
+.apron-col-offset-8 { margin-left: 33.333333%; }
+.apron-col-offset-9 { margin-left: 37.5%; }
+.apron-col-offset-10 { margin-left: 41.666667%; }
+.apron-col-offset-11 { margin-left: 45.833333%; }
+.apron-col-offset-12 { margin-left: 50%; }
+.apron-col-offset-13 { margin-left: 54.166667%; }
+.apron-col-offset-14 { margin-left: 58.333333%; }
+.apron-col-offset-15 { margin-left: 62.5%; }
+.apron-col-offset-16 { margin-left: 66.666667%; }
+.apron-col-offset-17 { margin-left: 70.833333%; }
+.apron-col-offset-18 { margin-left: 75%; }
+.apron-col-offset-19 { margin-left: 79.166667%; }
+.apron-col-offset-20 { margin-left: 83.333333%; }
+.apron-col-offset-21 { margin-left: 87.5%; }
+.apron-col-offset-22 { margin-left: 91.666667%; }
+.apron-col-offset-23 { margin-left: 95.833333%; }
+
+/* order 类 */
+.apron-col-order-1 { order: 1; }
+.apron-col-order-2 { order: 2; }
+.apron-col-order-3 { order: 3; }
+.apron-col-order-4 { order: 4; }
+.apron-col-order-5 { order: 5; }
+.apron-col-order-6 { order: 6; }
+.apron-col-order-7 { order: 7; }
+.apron-col-order-8 { order: 8; }
+.apron-col-order-9 { order: 9; }
+.apron-col-order-10 { order: 10; }
+.apron-col-order-11 { order: 11; }
+.apron-col-order-12 { order: 12; }
+
+/* push/pull 类 */
+.apron-col-push-1 { left: 4.166667%; }
+.apron-col-push-2 { left: 8.333333%; }
+.apron-col-push-3 { left: 12.5%; }
+.apron-col-push-4 { left: 16.666667%; }
+.apron-col-push-5 { left: 20.833333%; }
+.apron-col-push-6 { left: 25%; }
+.apron-col-push-7 { left: 29.166667%; }
+.apron-col-push-8 { left: 33.333333%; }
+.apron-col-push-9 { left: 37.5%; }
+.apron-col-push-10 { left: 41.666667%; }
+.apron-col-push-11 { left: 45.833333%; }
+.apron-col-push-12 { left: 50%; }
+
+.apron-col-pull-1 { right: 4.166667%; }
+.apron-col-pull-2 { right: 8.333333%; }
+.apron-col-pull-3 { right: 12.5%; }
+.apron-col-pull-4 { right: 16.666667%; }
+.apron-col-pull-5 { right: 20.833333%; }
+.apron-col-pull-6 { right: 25%; }
+.apron-col-pull-7 { right: 29.166667%; }
+.apron-col-pull-8 { right: 33.333333%; }
+.apron-col-pull-9 { right: 37.5%; }
+.apron-col-pull-10 { right: 41.666667%; }
+.apron-col-pull-11 { right: 45.833333%; }
+.apron-col-pull-12 { right: 50%; }
+
+/* 响应式类 - 简化版本，只生成常用的 */
+.apron-col-xs-0, .apron-col-sm-0, .apron-col-md-0, .apron-col-lg-0, .apron-col-xl-0, .apron-col-xxl-0 { display: none; }
+.apron-col-xs-12, .apron-col-sm-12, .apron-col-md-12, .apron-col-lg-12, .apron-col-xl-12, .apron-col-xxl-12 { display: block; flex: 0 0 50%; max-width: 50%; }
+.apron-col-xs-24, .apron-col-sm-24, .apron-col-md-24, .apron-col-lg-24, .apron-col-xl-24, .apron-col-xxl-24 { display: block; flex: 0 0 100%; max-width: 100%; }

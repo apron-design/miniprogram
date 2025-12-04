@@ -1,0 +1,4 @@
+<button class="apron-tabs__tab {{isActive ? 'active' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}" bindtap="handleClick" disabled="{{disabled}}">
+  <slot></slot>
+</button>
+

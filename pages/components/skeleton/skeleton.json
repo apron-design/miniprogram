@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Skeleton 骨架屏",
+  "usingComponents": {
+    "apron-skeleton": "../../../components/skeleton/skeleton"
+  }
+}

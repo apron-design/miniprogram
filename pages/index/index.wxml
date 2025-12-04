@@ -1,0 +1,187 @@
+<view class="container">
+  <view class="header">
+    <image class="logo" src="/assets/logo.svg" mode="aspectFit"></image>
+    <view class="title">Apron Design</view>
+    <view class="subtitle">微信小程序组件库</view>
+  </view>
+  
+  <view class="section">
+    <view class="section-title">基础组件</view>
+    <view class="component-list">
+      <navigator url="/pages/components/button/button" class="component-item">
+        <view class="component-name">Button 按钮</view>
+        <view class="component-desc">多种样式的按钮组件</view>
+      </navigator>
+      <navigator url="/pages/components/avatar/avatar" class="component-item">
+        <view class="component-name">Avatar 头像</view>
+        <view class="component-desc">用户头像展示</view>
+      </navigator>
+      <navigator url="/pages/components/badge/badge" class="component-item">
+        <view class="component-name">Badge 徽标</view>
+        <view class="component-desc">图标右上角的红点、数字或者文字</view>
+      </navigator>
+      <navigator url="/pages/components/card/card" class="component-item">
+        <view class="component-name">Card 卡片</view>
+        <view class="component-desc">通用卡片容器</view>
+      </navigator>
+      <navigator url="/pages/components/divider/divider" class="component-item">
+        <view class="component-name">Divider 分割线</view>
+        <view class="component-desc">区隔内容的分割线</view>
+      </navigator>
+      <navigator url="/pages/components/empty/empty" class="component-item">
+        <view class="component-name">Empty 空状态</view>
+        <view class="component-desc">空状态时的展示占位图</view>
+      </navigator>
+      <navigator url="/pages/components/image/image" class="component-item">
+        <view class="component-name">Image 图片</view>
+        <view class="component-desc">图片展示组件</view>
+      </navigator>
+      <navigator url="/pages/components/link/link" class="component-item">
+        <view class="component-name">Link 链接</view>
+        <view class="component-desc">超链接组件</view>
+      </navigator>
+      <navigator url="/pages/components/space/space" class="component-item">
+        <view class="component-name">Space 间距</view>
+        <view class="component-desc">设置组件之间的间距</view>
+      </navigator>
+      <navigator url="/pages/components/tag/tag" class="component-item">
+        <view class="component-name">Tag 标签</view>
+        <view class="component-desc">用于标记和选择</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">反馈组件</view>
+    <view class="component-list">
+      <navigator url="/pages/components/alert/alert" class="component-item">
+        <view class="component-name">Alert 警告提示</view>
+        <view class="component-desc">用于页面中展示重要的提示信息</view>
+      </navigator>
+      <navigator url="/pages/components/message/message" class="component-item">
+        <view class="component-name">Message 全局提示</view>
+        <view class="component-desc">全局展示操作反馈信息</view>
+      </navigator>
+      <navigator url="/pages/components/modal/modal" class="component-item">
+        <view class="component-name">Modal 对话框</view>
+        <view class="component-desc">模态对话框</view>
+      </navigator>
+      <navigator url="/pages/components/drawer/drawer" class="component-item">
+        <view class="component-name">Drawer 抽屉</view>
+        <view class="component-desc">屏幕边缘滑出的浮层面板</view>
+      </navigator>
+      <navigator url="/pages/components/spin/spin" class="component-item">
+        <view class="component-name">Spin 加载中</view>
+        <view class="component-desc">用于页面和区块的加载中状态</view>
+      </navigator>
+      <navigator url="/pages/components/skeleton/skeleton" class="component-item">
+        <view class="component-name">Skeleton 骨架屏</view>
+        <view class="component-desc">在需要等待加载内容的位置设置一个骨架屏</view>
+      </navigator>
+      <navigator url="/pages/components/toast/toast" class="component-item">
+        <view class="component-name">Toast 轻提示</view>
+        <view class="component-desc">轻量级反馈/提示</view>
+      </navigator>
+      <navigator url="/pages/components/popover/popover" class="component-item">
+        <view class="component-name">Popover 气泡卡片</view>
+        <view class="component-desc">点击/鼠标移入元素，弹出气泡式的卡片浮层</view>
+      </navigator>
+      <navigator url="/pages/components/tooltip/tooltip" class="component-item">
+        <view class="component-name">Tooltip 文字提示</view>
+        <view class="component-desc">简单的文字提示气泡框</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">表单组件</view>
+    <view class="component-list">
+      <navigator url="/pages/components/input/input" class="component-item">
+        <view class="component-name">Input 输入框</view>
+        <view class="component-desc">通过鼠标或键盘输入内容</view>
+      </navigator>
+      <navigator url="/pages/components/textarea/textarea" class="component-item">
+        <view class="component-name">Textarea 文本域</view>
+        <view class="component-desc">多行文本输入框</view>
+      </navigator>
+      <navigator url="/pages/components/input-otp/input-otp" class="component-item">
+        <view class="component-name">InputOtp 验证码输入</view>
+        <view class="component-desc">一次性密码输入框</view>
+      </navigator>
+      <navigator url="/pages/components/checkbox/checkbox" class="component-item">
+        <view class="component-name">Checkbox 复选框</view>
+        <view class="component-desc">多选框组件</view>
+      </navigator>
+      <navigator url="/pages/components/radio/radio" class="component-item">
+        <view class="component-name">Radio 单选框</view>
+        <view class="component-desc">单选框组件</view>
+      </navigator>
+      <navigator url="/pages/components/select/select" class="component-item">
+        <view class="component-name">Select 选择器</view>
+        <view class="component-desc">下拉选择器</view>
+      </navigator>
+      <navigator url="/pages/components/switch/switch" class="component-item">
+        <view class="component-name">Switch 开关</view>
+        <view class="component-desc">开关选择器</view>
+      </navigator>
+      <navigator url="/pages/components/date-picker/date-picker" class="component-item">
+        <view class="component-name">DatePicker 日期选择</view>
+        <view class="component-desc">日期选择器</view>
+      </navigator>
+      <navigator url="/pages/components/cascader/cascader" class="component-item">
+        <view class="component-name">Cascader 级联选择</view>
+        <view class="component-desc">级联选择器</view>
+      </navigator>
+      <navigator url="/pages/components/rate/rate" class="component-item">
+        <view class="component-name">Rate 评分</view>
+        <view class="component-desc">评分组件</view>
+      </navigator>
+      <navigator url="/pages/components/form/form" class="component-item">
+        <view class="component-name">Form 表单</view>
+        <view class="component-desc">表单组件</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">布局组件</view>
+    <view class="component-list">
+      <navigator url="/pages/components/row/row" class="component-item">
+        <view class="component-name">Grid 栅格</view>
+        <view class="component-desc">24 栅格系统</view>
+      </navigator>
+      <navigator url="/pages/components/collapse/collapse" class="component-item">
+        <view class="component-name">Collapse 折叠面板</view>
+        <view class="component-desc">可以折叠/展开的内容区域</view>
+      </navigator>
+      <navigator url="/pages/components/tabs/tabs" class="component-item">
+        <view class="component-name">Tabs 标签页</view>
+        <view class="component-desc">选项卡切换组件</view>
+      </navigator>
+      <navigator url="/pages/components/steps/steps" class="component-item">
+        <view class="component-name">Steps 步骤条</view>
+        <view class="component-desc">引导用户按照流程完成任务</view>
+      </navigator>
+      <navigator url="/pages/components/timeline/timeline" class="component-item">
+        <view class="component-name">Timeline 时间轴</view>
+        <view class="component-desc">垂直展示的时间流信息</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">其他组件</view>
+    <view class="component-list">
+      <navigator url="/pages/components/pagination/pagination" class="component-item">
+        <view class="component-name">Pagination 分页</view>
+        <view class="component-desc">采用分页的形式分隔长列表</view>
+      </navigator>
+      <navigator url="/pages/components/responsive-modal/responsive-modal" class="component-item">
+        <view class="component-name">ResponsiveModal 响应式对话框</view>
+        <view class="component-desc">根据屏幕尺寸自动切换 Modal/Drawer</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<apron-message id="apron-message-container"></apron-message>

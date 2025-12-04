@@ -1,0 +1,4 @@
+<view class="apron-row {{justify !== 'start' ? 'justify-' + justify : ''}} {{align !== 'top' ? 'align-' + align : ''}} {{!wrap ? 'no-wrap' : ''}} {{customClass}}" style="margin-left: -{{horizontalGutter}}rpx; margin-right: -{{horizontalGutter}}rpx; {{verticalGutter > 0 ? 'row-gap: ' + verticalGutter + 'rpx;' : ''}} {{customStyle}}">
+  <slot></slot>
+</view>
+

@@ -1,0 +1,16 @@
+<view class="apron-input {{customClass}}" style="{{customStyle}}">
+  <view wx:if="{{label}}" class="apron-input__label">{{label}}</view>
+  <input
+    class="apron-input__input {{disabled ? 'disabled' : ''}}"
+    type="{{type}}"
+    value="{{value}}"
+    placeholder="{{placeholder}}"
+    disabled="{{disabled}}"
+    maxlength="{{maxlength}}"
+    bindinput="handleInput"
+    bindfocus="handleFocus"
+    bindblur="handleBlur"
+  />
+  <view wx:if="{{error}}" class="apron-input__error">{{error}}</view>
+</view>
+

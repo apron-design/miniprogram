@@ -1,0 +1,34 @@
+<view wx:if="{{totalPages > 0}}" class="apron-pagination {{size}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}" role="navigation" aria-label="分页导航">
+  <button
+    class="apron-pagination__item apron-pagination__arrow {{currentPage === 1 ? 'disabled' : ''}}"
+    bindtap="handlePrev"
+    disabled="{{disabled || currentPage === 1}}"
+    aria-label="上一页"
+  >
+    ‹
+  </button>
+  <view wx:for="{{pageNumbers}}" wx:key="index" wx:for-item="page" wx:for-index="idx">
+    <view wx:if="{{page === 'ellipsis-left' || page === 'ellipsis-right'}}" class="apron-pagination__item apron-pagination__ellipsis">
+      ...
+    </view>
+    <button
+      wx:else
+      class="apron-pagination__item {{page === currentPage ? 'active' : ''}}"
+      bindtap="handlePageChange"
+      data-page="{{page}}"
+      disabled="{{disabled}}"
+      aria-current="{{page === currentPage ? 'page' : ''}}"
+    >
+      {{page}}
+    </button>
+  </view>
+  <button
+    class="apron-pagination__item apron-pagination__arrow {{currentPage === totalPages ? 'disabled' : ''}}"
+    bindtap="handleNext"
+    disabled="{{disabled || currentPage === totalPages}}"
+    aria-label="下一页"
+  >
+    ›
+  </button>
+</view>
+

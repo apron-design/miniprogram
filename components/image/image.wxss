@@ -1,0 +1,53 @@
+@import '../../styles/variables.wxss';
+
+.apron-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-neutral-100);
+  transition: all 0.3s ease;
+}
+
+.apron-image.placeholder {
+  min-width: 200rpx;
+  min-height: 200rpx;
+}
+
+.apron-image__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24rpx;
+  padding: var(--spacing-4);
+}
+
+.apron-image__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-400);
+  transition: all 0.3s ease;
+  font-size: 80rpx;
+}
+
+.apron-image__text {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.apron-image__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+

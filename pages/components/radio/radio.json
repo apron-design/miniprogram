@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Radio 单选框",
+  "usingComponents": {
+    "apron-radio": "../../../components/radio/radio"
+  }
+}

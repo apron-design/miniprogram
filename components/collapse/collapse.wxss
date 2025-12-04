@@ -1,0 +1,9 @@
+@import '../../styles/variables.wxss';
+
+.apron-collapse {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+

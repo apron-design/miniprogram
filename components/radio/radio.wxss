@@ -1,0 +1,86 @@
+@import '../../styles/variables.wxss';
+
+.apron-radio {
+  display: inline-flex;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--font-size-base);
+}
+
+.apron-radio__input-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.apron-radio__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  z-index: 1;
+}
+
+.apron-radio__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #ffffff;
+  border: 2rpx solid var(--color-neutral-300);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.apron-radio.checked .apron-radio__circle {
+  border-color: var(--color-success-500);
+}
+
+.apron-radio.disabled .apron-radio__circle {
+  background-color: var(--color-neutral-100);
+  border-color: var(--color-neutral-200);
+  cursor: not-allowed;
+}
+
+.apron-radio__dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: var(--color-success-500);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.apron-radio.checked .apron-radio__dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.apron-radio.disabled.checked .apron-radio__dot {
+  background-color: var(--color-neutral-400);
+}
+
+.apron-radio__label {
+  margin-left: var(--spacing-2);
+  color: var(--color-primary-500);
+  line-height: 50rpx;
+  user-select: none;
+}
+
+.apron-radio.disabled .apron-radio__label {
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+}
+
+.apron-radio.label-not-clickable .apron-radio__label {
+  pointer-events: none;
+}
+

@@ -1,0 +1,18 @@
+<navigator
+  wx:if="{{url}}"
+  url="{{url}}"
+  class="apron-link {{variant}} underline-{{underline}} {{danger ? 'danger' : ''}} {{customClass}}"
+  style="{{customStyle}}"
+  hover-class="{{!disabled ? 'apron-link--hover' : ''}}"
+>
+  <slot></slot>
+</navigator>
+<view
+  wx:else
+  class="apron-link {{variant}} underline-{{underline}} {{danger ? 'danger' : ''}} {{customClass}}"
+  style="{{customStyle}}"
+  bindtap="handleTap"
+>
+  <slot></slot>
+</view>
+

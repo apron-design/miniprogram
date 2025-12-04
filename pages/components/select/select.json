@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Select 选择器",
+  "usingComponents": {
+    "apron-select": "../../../components/select/select"
+  }
+}

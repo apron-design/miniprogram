@@ -1,0 +1,10 @@
+<view class="apron-alert {{type}} {{customClass}}" style="{{customStyle}}">
+  <view class="apron-alert__icon">
+    <view wx:if="{{type === 'info'}}" class="apron-alert__icon-info">i</view>
+    <view wx:elif="{{type === 'success'}}" class="apron-alert__icon-success">✓</view>
+    <view wx:elif="{{type === 'warning'}}" class="apron-alert__icon-warning">!</view>
+    <view wx:elif="{{type === 'error'}}" class="apron-alert__icon-error">×</view>
+  </view>
+  <view class="apron-alert__message">{{content}}</view>
+</view>
+

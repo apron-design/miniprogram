@@ -1,0 +1,221 @@
+@import '../../styles/variables.wxss';
+
+/* Button Base Styles */
+.apron-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--spacing-2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Sizes */
+.apron-button.sm {
+  height: 60rpx;
+  padding: 0 var(--spacing-4);
+  font-size: var(--font-size-sm);
+  border-radius: 30rpx;
+}
+
+.apron-button.md {
+  height: 80rpx;
+  padding: 0 var(--spacing-5);
+  font-size: var(--font-size-base);
+  border-radius: 40rpx;
+}
+
+/* Primary Type */
+.apron-button.primary {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: #FFFFFF;
+}
+
+.apron-button.primary.danger {
+  background-color: var(--color-error-500);
+  border-color: var(--color-error-500);
+  color: #FFFFFF;
+}
+
+.apron-button.primary.apron-button--hover {
+  background-color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+}
+
+.apron-button.primary.danger.apron-button--hover {
+  background-color: var(--color-error-600);
+  border-color: var(--color-error-600);
+}
+
+/* Secondary Type */
+.apron-button.secondary {
+  background-color: transparent;
+  border-color: var(--color-secondary-500);
+  color: var(--color-secondary-500);
+}
+
+.apron-button.secondary.danger {
+  border-color: var(--color-error-500);
+  color: var(--color-error-500);
+}
+
+.apron-button.secondary.apron-button--hover {
+  border-color: var(--color-secondary-600);
+  color: var(--color-secondary-600);
+}
+
+.apron-button.secondary.danger.apron-button--hover {
+  border-color: var(--color-error-600);
+  color: var(--color-error-600);
+}
+
+/* Default Type */
+.apron-button.default {
+  background-color: transparent;
+  border-color: var(--color-primary-500);
+  color: var(--color-primary-500);
+}
+
+.apron-button.default.danger {
+  border-color: var(--color-error-500);
+  color: var(--color-error-500);
+}
+
+.apron-button.default.apron-button--hover {
+  border-color: var(--color-primary-600);
+  color: var(--color-primary-600);
+}
+
+.apron-button.default.danger.apron-button--hover {
+  border-color: var(--color-error-600);
+  color: var(--color-error-600);
+}
+
+/* Text Type */
+.apron-button.text {
+  background-color: #FFFFFF;
+  border-color: transparent;
+  color: var(--color-primary-500);
+}
+
+.apron-button.text.danger {
+  color: var(--color-error-500);
+}
+
+.apron-button.text.apron-button--hover {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-600);
+}
+
+.apron-button.text.danger.apron-button--hover {
+  background-color: rgba(239, 68, 68, 0.08);
+  color: var(--color-error-600);
+}
+
+/* Link Type */
+.apron-button.link {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-secondary-500);
+  padding: 0;
+  height: auto;
+}
+
+.apron-button.link.danger {
+  color: var(--color-error-500);
+}
+
+.apron-button.link.apron-button--hover {
+  color: var(--color-secondary-600);
+}
+
+.apron-button.link.danger.apron-button--hover {
+  color: var(--color-error-600);
+}
+
+/* Dashed */
+.apron-button.dashed {
+  border-style: dashed;
+}
+
+/* Block */
+.apron-button.block {
+  width: 100%;
+}
+
+/* Disabled */
+.apron-button[disabled] {
+  background-color: var(--color-neutral-100) !important;
+  border-color: var(--color-neutral-300) !important;
+  color: var(--color-neutral-400) !important;
+  cursor: not-allowed;
+}
+
+.apron-button.secondary[disabled],
+.apron-button.default[disabled],
+.apron-button.link[disabled] {
+  background-color: transparent !important;
+}
+
+/* Loading */
+.apron-button.loading {
+  pointer-events: none;
+}
+
+/* Content */
+.apron-button__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.apron-button__text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.apron-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spinner */
+.apron-button__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: apron-button-spin 1s linear infinite;
+}
+
+.apron-button__spinner-circle {
+  width: 1em;
+  height: 1em;
+  border: 3px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: apron-button-spin 1s linear infinite;
+}
+
+@keyframes apron-button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,28 @@
+<view class="apron-cascader {{isActive ? 'active' : ''}} {{isOpen ? 'open' : ''}} {{disabled ? 'disabled' : ''}} {{loading ? 'loading' : ''}} {{inflow ? 'inflow' : ''}} {{customClass}}" style="{{customStyle}}" bindtap="toggleDropdown">
+  <view class="apron-cascader__trigger">
+    <view class="apron-cascader__value {{!hasValue ? 'placeholder' : ''}}">{{displayText || placeholder}}</view>
+    <view class="apron-cascader__suffix">
+      <view wx:if="{{loading}}" class="apron-cascader__loading-icon">⟳</view>
+      <view wx:else class="apron-cascader__arrow {{isOpen ? 'open' : ''}}">▼</view>
+    </view>
+  </view>
+  <view wx:if="{{isOpen && !loading}}" class="apron-cascader__dropdown">
+    <view class="apron-cascader__panels">
+      <view wx:for="{{panels}}" wx:key="level" wx:for-item="panel" wx:for-index="levelIdx" class="apron-cascader__panel">
+        <view
+          wx:for="{{panel.options}}"
+          wx:key="value"
+          wx:for-item="option"
+          class="apron-cascader__option {{option.selected ? 'selected' : ''}} {{option.disabled ? 'disabled' : ''}}"
+          data-level="{{levelIdx}}"
+          data-value="{{option.value}}"
+          bindtap="handleSelect"
+        >
+          {{option.label}}
+          <view wx:if="{{option.hasChildren}}" class="apron-cascader__arrow-right">›</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

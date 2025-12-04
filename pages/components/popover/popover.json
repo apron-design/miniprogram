@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Popover 气泡卡片",
+  "usingComponents": {
+    "apron-popover": "../../../components/popover/popover"
+  }
+}

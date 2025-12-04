@@ -1,0 +1,21 @@
+<view class="apron-image {{loadingState !== 'loaded' ? 'placeholder' : ''}} {{customClass}}" style="{{customStyle}}">
+  <view wx:if="{{loadingState !== 'loaded'}}" class="apron-image__placeholder">
+    <view class="apron-image__icon">
+      <view wx:if="{{loadingState === 'error'}}" class="apron-image__icon-error">❌</view>
+      <view wx:else class="apron-image__icon-placeholder">🖼️</view>
+    </view>
+    <view wx:if="{{loadingState === 'loading' || loadingState === 'error'}}" class="apron-image__text">
+      {{loadingState === 'loading' ? '图片加载中' : '图片加载失败'}}
+    </view>
+  </view>
+  <image
+    wx:if="{{src}}"
+    src="{{src}}"
+    mode="{{objectFit}}"
+    class="apron-image__img"
+    style="opacity: {{loadingState === 'loaded' ? 1 : 0}}"
+    bindload="handleLoad"
+    binderror="handleError"
+  />
+</view>
+

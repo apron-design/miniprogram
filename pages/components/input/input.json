@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Input 输入框",
+  "usingComponents": {
+    "apron-input": "../../../components/input/input"
+  }
+}
+

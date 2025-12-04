@@ -1,0 +1,16 @@
+<view class="apron-popover-wrapper {{customClass}}" style="{{customStyle}}">
+  <view class="apron-popover__trigger" bindtap="handleTriggerClick" bindtouchstart="handleTriggerTouchStart" bindtouchend="handleTriggerTouchEnd">
+    <slot name="trigger"></slot>
+  </view>
+  <view wx:if="{{visible}}" class="apron-popover {{customPopoverClass}}" style="{{popoverStyle}}">
+    <view class="apron-popover__arrow"></view>
+    <view class="apron-popover__content">
+      <view wx:if="{{title}}" class="apron-popover__title">{{title}}</view>
+      <view wx:if="{{content}}" class="apron-popover__body">{{content}}</view>
+      <view wx:else class="apron-popover__body">
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+</view>
+

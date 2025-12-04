@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-alert type="info" content="这是一条信息提示"></apron-alert>
+      <apron-alert type="success" content="这是一条成功提示"></apron-alert>
+      <apron-alert type="warning" content="这是一条警告提示"></apron-alert>
+      <apron-alert type="error" content="这是一条错误提示"></apron-alert>
+    </view>
+  </view>
+</view>
+

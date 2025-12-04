@@ -1,0 +1,11 @@
+<view class="apron-empty {{customClass}}" style="{{customStyle}}">
+  <view class="apron-empty__icon">
+    <slot name="icon">
+      <view class="apron-empty__icon-default">📭</view>
+    </slot>
+  </view>
+  <view class="apron-empty__text">
+    <slot>暂无数据</slot>
+  </view>
+</view>
+

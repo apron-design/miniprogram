@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Empty 空状态",
+  "usingComponents": {
+    "apron-empty": "../../../components/empty/empty"
+  }
+}

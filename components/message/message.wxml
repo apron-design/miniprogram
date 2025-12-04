@@ -1,0 +1,12 @@
+<view class="apron-message-root" id="apron-message-container">
+  <view wx:for="{{messages}}" wx:key="id" class="apron-message-item {{item.type}} {{item.visible ? 'visible' : 'leaving'}}">
+    <view class="apron-message__icon">
+      <view wx:if="{{item.type === 'info'}}" class="apron-message__icon-info">i</view>
+      <view wx:elif="{{item.type === 'success'}}" class="apron-message__icon-success">✓</view>
+      <view wx:elif="{{item.type === 'warning'}}" class="apron-message__icon-warning">!</view>
+      <view wx:elif="{{item.type === 'error'}}" class="apron-message__icon-error">×</view>
+    </view>
+    <view class="apron-message__content">{{item.content}}</view>
+  </view>
+</view>
+

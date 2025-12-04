@@ -1,0 +1,19 @@
+<view class="apron-form-item {{layout}} {{floatingLabel ? 'floating-label' : ''}} {{floatingLabel && (isFocused || hasValue) ? 'floating-active' : ''}} {{error ? 'error' : ''}} {{isRequired ? 'required' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}">
+  <label wx:if="{{!noLabel && label && !floatingLabel}}" class="apron-form-item__label" for="{{itemId}}" style="{{labelStyle}}">
+    {{label}}
+    <view wx:if="{{isRequired}}" class="apron-form-item__required">*</view>
+  </label>
+  <view class="apron-form-item__control">
+    <label wx:if="{{floatingLabel && label}}" class="apron-form-item__floating-label" for="{{itemId}}">
+      {{label}}
+      <view wx:if="{{isRequired}}" class="apron-form-item__required">*</view>
+    </label>
+    <view class="apron-form-item__content">
+      <slot></slot>
+    </view>
+    <view wx:if="{{error}}" class="apron-form-item__error">{{error}}</view>
+    <view wx:if="{{help && !error}}" class="apron-form-item__help">{{help}}</view>
+    <view wx:if="{{extra}}" class="apron-form-item__extra">{{extra}}</view>
+  </view>
+</view>
+

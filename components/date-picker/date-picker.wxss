@@ -1,0 +1,128 @@
+@import '../../styles/variables.wxss';
+
+.apron-datepicker {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: var(--font-size-base);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.apron-datepicker__trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  padding: 0 var(--spacing-4);
+  background-color: var(--color-primary-50);
+  border: 1px solid var(--color-primary-50);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.apron-datepicker.active .apron-datepicker__trigger {
+  background-color: #ffffff;
+  border-color: var(--color-primary-500);
+}
+
+.apron-datepicker.disabled .apron-datepicker__trigger {
+  background-color: var(--color-neutral-100);
+  border-color: var(--color-neutral-200);
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+}
+
+.apron-datepicker__value {
+  flex: 1;
+  color: var(--color-primary-500);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.apron-datepicker__value.placeholder {
+  color: var(--color-primary-300);
+}
+
+.apron-datepicker__suffix {
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing-2);
+  color: var(--color-primary-300);
+}
+
+.apron-datepicker__arrow {
+  font-size: 24rpx;
+  transition: transform 0.3s ease;
+}
+
+.apron-datepicker__arrow.open {
+  transform: rotate(180deg);
+}
+
+.apron-datepicker__loading-icon {
+  font-size: 32rpx;
+  animation: apron-datepicker-spin 1s linear infinite;
+}
+
+@keyframes apron-datepicker-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.apron-datepicker__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: var(--spacing-2);
+  background-color: #ffffff;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20rpx 30rpx -10rpx rgba(0, 0, 0, 0.1);
+  z-index: var(--z-index-dropdown);
+  max-height: 600rpx;
+  overflow: hidden;
+}
+
+.apron-datepicker__tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.apron-datepicker__tab {
+  flex: 1;
+  padding: var(--spacing-3);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-neutral-500);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apron-datepicker__tab.active {
+  color: var(--color-primary-500);
+  border-bottom: 2rpx solid var(--color-primary-500);
+}
+
+.apron-datepicker__content {
+  padding: var(--spacing-4);
+  max-height: 500rpx;
+  overflow-y: auto;
+}
+
+.apron-datepicker__picker-item {
+  padding: var(--spacing-3);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-primary-500);
+}
+
+.apron-datepicker.inflow {
+  width: auto;
+  min-width: 200rpx;
+}
+

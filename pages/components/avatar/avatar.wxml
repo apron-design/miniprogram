@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-avatar size="mini">A</apron-avatar>
+      <apron-avatar size="small">B</apron-avatar>
+      <apron-avatar size="middle">C</apron-avatar>
+      <apron-avatar size="large">D</apron-avatar>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">图片头像</view>
+    <view class="demo">
+      <apron-avatar src="https://via.placeholder.com/40" size="middle"></apron-avatar>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">方形头像</view>
+    <view class="demo">
+      <apron-avatar size="middle" square="{{true}}">方</apron-avatar>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">头像组</view>
+    <view class="demo">
+      <apron-avatar-group>
+        <apron-avatar size="middle">A</apron-avatar>
+        <apron-avatar size="middle">B</apron-avatar>
+        <apron-avatar size="middle">C</apron-avatar>
+      </apron-avatar-group>
+    </view>
+  </view>
+</view>
+

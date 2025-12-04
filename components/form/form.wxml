@@ -1,0 +1,4 @@
+<view class="apron-form {{layout}} {{floatingLabel ? 'floating-label' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+</view>
+

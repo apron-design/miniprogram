@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-input placeholder="请输入内容" value="{{value1}}" bindinput="handleInput1" />
+      <apron-input label="用户名" placeholder="请输入用户名" value="{{value2}}" bindinput="handleInput2" />
+      <apron-input label="密码" type="password" placeholder="请输入密码" value="{{value3}}" bindinput="handleInput3" />
+      <apron-input label="禁用状态" value="禁用内容" disabled="{{true}}" />
+      <apron-input label="错误提示" value="{{value4}}" error="请输入正确的内容" bindinput="handleInput4" />
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,64 @@
+@import '../../styles/variables.wxss';
+
+.apron-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: var(--spacing-4) 0;
+  transition: all 0.3s ease;
+}
+
+.apron-divider__line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-neutral-300);
+  transition: all 0.3s ease;
+}
+
+.apron-divider.dashed .apron-divider__line {
+  background: none;
+  border-top: 1px dashed var(--color-neutral-300);
+  height: 0;
+}
+
+.apron-divider.with-text .apron-divider__line {
+  flex: none;
+}
+
+.apron-divider.with-text .apron-divider__line--left,
+.apron-divider.with-text .apron-divider__line--right {
+  flex: 1;
+}
+
+.apron-divider__text {
+  flex-shrink: 0;
+  padding: 0 var(--spacing-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.apron-divider.left .apron-divider__line--left {
+  flex: none;
+  width: 80rpx;
+}
+
+.apron-divider.left .apron-divider__line--right {
+  flex: 1;
+}
+
+.apron-divider.center .apron-divider__line--left,
+.apron-divider.center .apron-divider__line--right {
+  flex: 1;
+}
+
+.apron-divider.right .apron-divider__line--left {
+  flex: 1;
+}
+
+.apron-divider.right .apron-divider__line--right {
+  flex: none;
+  width: 80rpx;
+}
+

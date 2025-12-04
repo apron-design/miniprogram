@@ -1,0 +1,4 @@
+<view class="apron-timeline {{side}} {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+</view>
+

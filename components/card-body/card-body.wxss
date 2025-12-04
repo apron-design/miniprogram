@@ -1,0 +1,7 @@
+@import '../../styles/variables.wxss';
+
+.apron-card__body {
+  padding: 20rpx 30rpx;
+  transition: all 0.3s ease;
+}
+

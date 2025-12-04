@@ -1,0 +1,4 @@
+<view class="apron-checkbox-group {{direction}} {{customClass}}" style="{{customStyle}}" role="group">
+  <slot></slot>
+</view>
+

@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-badge count="{{5}}">
+        <view class="badge-demo-box">消息</view>
+      </apron-badge>
+      <apron-badge count="{{99}}">
+        <view class="badge-demo-box">消息</view>
+      </apron-badge>
+      <apron-badge count="{{100}}" overflowCount="{{99}}">
+        <view class="badge-demo-box">消息</view>
+      </apron-badge>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">红点</view>
+    <view class="demo">
+      <apron-badge dot="{{true}}">
+        <view class="badge-demo-box">消息</view>
+      </apron-badge>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">自定义内容</view>
+    <view class="demo">
+      <apron-badge content="New">
+        <view class="badge-demo-box">消息</view>
+      </apron-badge>
+    </view>
+  </view>
+</view>
+

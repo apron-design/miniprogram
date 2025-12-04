@@ -1,0 +1,21 @@
+<label class="apron-radio {{disabled ? 'disabled' : ''}} {{checked ? 'checked' : ''}} {{!labelClickable ? 'label-not-clickable' : ''}} {{customClass}}">
+  <view class="apron-radio__input-wrapper">
+    <radio
+      id="{{radioId}}"
+      name="{{name}}"
+      class="apron-radio__input"
+      checked="{{checked}}"
+      disabled="{{disabled}}"
+      value="{{value}}"
+      bindtap="handleChange"
+    />
+    <view class="apron-radio__circle">
+      <view class="apron-radio__dot"></view>
+    </view>
+  </view>
+  <view wx:if="{{label}}" class="apron-radio__label" bindtap="handleLabelClick">{{label}}</view>
+  <view wx:else class="apron-radio__label" bindtap="handleLabelClick">
+    <slot></slot>
+  </view>
+</label>
+

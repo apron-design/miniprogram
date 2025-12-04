@@ -1,0 +1,56 @@
+<view class="apron-datepicker {{isActive ? 'active' : ''}} {{isOpen ? 'open' : ''}} {{disabled ? 'disabled' : ''}} {{loading ? 'loading' : ''}} {{inflow ? 'inflow' : ''}} {{customClass}}" style="{{customStyle}}" bindtap="toggleDropdown">
+  <view class="apron-datepicker__trigger">
+    <view class="apron-datepicker__value {{!hasValue ? 'placeholder' : ''}}">{{displayText || '请选择日期'}}</view>
+    <view class="apron-datepicker__suffix">
+      <view wx:if="{{loading}}" class="apron-datepicker__loading-icon">⟳</view>
+      <view wx:else class="apron-datepicker__arrow {{isOpen ? 'open' : ''}}">▼</view>
+    </view>
+  </view>
+  <view wx:if="{{isOpen && !loading}}" class="apron-datepicker__dropdown">
+    <view class="apron-datepicker__tabs">
+      <view
+        wx:for="{{tabs}}"
+        wx:key="type"
+        wx:for-item="tab"
+        class="apron-datepicker__tab {{tab.active ? 'active' : ''}}"
+        data-type="{{tab.type}}"
+        bindtap="handleTabChange"
+      >
+        {{tab.label}}
+      </view>
+    </view>
+    <view class="apron-datepicker__content">
+      <picker
+        wx:if="{{activeTab === 'year'}}"
+        mode="selector"
+        range="{{years}}"
+        range-key="label"
+        value="{{yearIndex}}"
+        bindchange="handleYearChange"
+      >
+        <view class="apron-datepicker__picker-item">{{selectedYear}}年</view>
+      </picker>
+      <picker
+        wx:if="{{activeTab === 'month'}}"
+        mode="selector"
+        range="{{months}}"
+        range-key="label"
+        value="{{monthIndex}}"
+        bindchange="handleMonthChange"
+      >
+        <view class="apron-datepicker__picker-item">{{selectedMonth}}月</view>
+      </picker>
+      <picker
+        wx:if="{{activeTab === 'day'}}"
+        mode="selector"
+        range="{{days}}"
+        range-key="label"
+        value="{{dayIndex}}"
+        bindchange="handleDayChange"
+      >
+        <view class="apron-datepicker__picker-item">{{selectedDay}}日</view>
+      </picker>
+    </view>
+  </view>
+</view>
+

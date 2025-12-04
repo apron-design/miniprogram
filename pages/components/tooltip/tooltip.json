@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Tooltip 文字提示",
+  "usingComponents": {
+    "apron-tooltip": "../../../components/tooltip/tooltip"
+  }
+}

@@ -1,0 +1,66 @@
+Component({
+  properties: {
+    checked: {
+      type: Boolean,
+      value: false
+    },
+    defaultChecked: {
+      type: Boolean,
+      value: false
+    },
+    disabled: {
+      type: Boolean,
+      value: false
+    },
+    value: {
+      type: [String, Number],
+      value: ''
+    },
+    name: {
+      type: String,
+      value: ''
+    },
+    label: {
+      type: String,
+      value: ''
+    },
+    labelClickable: {
+      type: Boolean,
+      value: false
+    },
+    customClass: {
+      type: String,
+      value: ''
+    },
+    customStyle: {
+      type: String,
+      value: ''
+    }
+  },
+  data: {
+    radioId: '',
+    internalChecked: false
+  },
+  attached() {
+    this.setData({
+      radioId: `radio-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      internalChecked: this.data.defaultChecked
+    });
+  },
+  methods: {
+    handleChange(e) {
+      if (this.data.disabled) return;
+      const checked = e.detail.value === this.data.value;
+      if (this.data.checked === undefined) {
+        this.setData({ internalChecked: checked });
+      }
+      this.triggerEvent('change', { checked, event: e.detail });
+    },
+    handleLabelClick(e) {
+      if (!this.data.labelClickable) {
+        e.stopPropagation();
+      }
+    }
+  }
+});
+

@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-card>
+        <apron-card-header title="卡片标题" extra="更多">
+          <view slot="extra">操作</view>
+        </apron-card-header>
+        <apron-card-body>卡片内容</apron-card-body>
+        <apron-card-footer>卡片底部</apron-card-footer>
+      </apron-card>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,18 @@
+@import '../../styles/variables.wxss';
+
+.apron-avatar-group {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.apron-avatar-group .apron-avatar {
+  box-sizing: content-box;
+  border: 4rpx solid #ffffff;
+}
+
+.apron-avatar-group .apron-avatar:not(:last-child) {
+  margin-left: -24rpx;
+}
+

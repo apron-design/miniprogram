@@ -1,0 +1,8 @@
+@import '../../styles/variables.wxss';
+
+.apron-card__footer {
+  padding: 20rpx 30rpx;
+  border-top: 1px solid var(--color-neutral-200);
+  transition: all 0.3s ease;
+}
+

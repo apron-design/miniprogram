@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Link 链接",
+  "usingComponents": {
+    "apron-link": "../../../components/link/link"
+  }
+}

@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="section">
+    <view class="section-title">基础用法</view>
+    <view class="demo">
+      <apron-button variant="primary" bindtap="showModal">打开对话框</apron-button>
+    </view>
+  </view>
+</view>
+
+<apron-modal
+  visible="{{modalVisible}}"
+  title="提示"
+  bindclose="handleClose"
+  bindconfirm="handleConfirm"
+  bindcancel="handleCancel"
+>
+  <view slot="content">这是一个模态对话框</view>
+</apron-modal>
+

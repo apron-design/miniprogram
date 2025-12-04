@@ -1,0 +1,9 @@
+<view class="apron-tabs__list {{customClass}}" style="{{customStyle}}" role="tablist">
+  <view class="apron-tabs__list-items">
+    <slot></slot>
+  </view>
+  <view wx:if="{{extra}}" class="apron-tabs__list-extra">
+    <slot name="extra"></slot>
+  </view>
+</view>
+

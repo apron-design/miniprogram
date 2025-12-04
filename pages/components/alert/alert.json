@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Alert 警告提示",
+  "usingComponents": {
+    "apron-alert": "../../../components/alert/alert"
+  }
+}
+

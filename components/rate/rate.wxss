@@ -1,0 +1,50 @@
+@import '../../styles/variables.wxss';
+
+.apron-rate {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.apron-rate__stars {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.apron-rate__star {
+  position: relative;
+  display: inline-block;
+  font-size: 40rpx;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apron-rate__star.interactive:active {
+  transform: scale(1.1);
+}
+
+.apron-rate__star.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.apron-rate__star-bg {
+  color: var(--color-neutral-300);
+}
+
+.apron-rate__star-fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #EFBB47;
+  overflow: hidden;
+}
+
+.apron-rate__value {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-500);
+  margin-left: var(--spacing-2);
+}
+

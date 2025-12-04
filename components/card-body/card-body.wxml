@@ -1,0 +1,4 @@
+<view class="apron-card__body {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+</view>
+

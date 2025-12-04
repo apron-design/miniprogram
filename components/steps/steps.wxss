@@ -1,0 +1,122 @@
+@import '../../styles/variables.wxss';
+
+.apron-steps {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.apron-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.apron-step__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-500);
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: var(--spacing-2);
+}
+
+.apron-step__label--top {
+  margin-bottom: var(--spacing-2);
+}
+
+.apron-step__label--bottom {
+  margin-top: var(--spacing-2);
+}
+
+.apron-step.completed .apron-step__label {
+  color: var(--color-success-500);
+}
+
+.apron-step.current .apron-step__label {
+  color: var(--color-primary-500);
+  font-weight: var(--font-weight-semibold);
+}
+
+.apron-step.pending .apron-step__label {
+  color: var(--color-neutral-400);
+}
+
+.apron-step__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.apron-step__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  font-size: 32rpx;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.apron-step__icon-completed {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: var(--color-success-500);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.apron-step__icon-current {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  border: 4rpx solid var(--color-primary-500);
+  background-color: #ffffff;
+  color: var(--color-primary-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.apron-step__icon-pending {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  border: 4rpx solid var(--color-neutral-300);
+  background-color: #ffffff;
+  color: var(--color-neutral-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.apron-step__line {
+  flex: 1;
+  height: 4rpx;
+  margin: 0 var(--spacing-2);
+  background-color: var(--color-neutral-300);
+  transition: all 0.3s ease;
+}
+
+.apron-step__line.completed {
+  background-color: var(--color-success-500);
+}
+
+.apron-step__line.completed-to-current {
+  background: linear-gradient(to right, var(--color-success-500) 0%, var(--color-primary-500) 100%);
+}
+
+.apron-step__line.current-to-pending {
+  background: linear-gradient(to right, var(--color-primary-500) 0%, var(--color-neutral-300) 100%);
+}
+

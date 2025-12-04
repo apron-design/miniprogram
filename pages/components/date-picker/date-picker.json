@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "DatePicker 日期选择",
+  "usingComponents": {
+    "apron-date-picker": "../../../components/date-picker/date-picker"
+  }
+}

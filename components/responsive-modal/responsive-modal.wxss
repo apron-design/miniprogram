@@ -1,0 +1,6 @@
+@import '../../styles/variables.wxss';
+
+.apron-responsive-modal {
+  /* 样式由子组件 Modal 或 Drawer 提供 */
+}
+

@@ -1,0 +1,24 @@
+<view wx:if="{{loading || fullscreen}}" class="apron-spin-wrapper {{fullscreen ? 'fullscreen' : ''}} {{customClass}}" style="{{customStyle}}">
+  <slot wx:if="{{!fullscreen}}"></slot>
+  <view wx:if="{{loading || fullscreen}}" class="apron-spin__overlay {{fullscreen ? 'fullscreen' : ''}}">
+    <view class="apron-spin__content {{placement}}">
+      <view class="apron-spin__icon">
+        <slot name="icon">
+          <view class="apron-spin__icon-svg">⟳</view>
+        </slot>
+      </view>
+      <view wx:if="{{text}}" class="apron-spin__text">{{text}}</view>
+    </view>
+  </view>
+</view>
+<view wx:else class="apron-spin {{customClass}}" style="{{customStyle}}">
+  <view class="apron-spin__content {{placement}}">
+    <view class="apron-spin__icon">
+      <slot name="icon">
+        <view class="apron-spin__icon-svg">⟳</view>
+      </slot>
+    </view>
+    <view wx:if="{{text}}" class="apron-spin__text">{{text}}</view>
+  </view>
+</view>
+

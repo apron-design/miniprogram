@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Form 表单",
+  "usingComponents": {
+    "apron-form": "../../../components/form/form"
+  }
+}

@@ -1,0 +1,4 @@
+<view class="apron-space {{orientation}} {{align ? 'align-' + align : ''}} {{wrap && orientation === 'horizontal' ? 'wrap' : ''}} {{customClass}}" style="gap: {{gapValue}}rpx; {{customStyle}}">
+  <slot></slot>
+</view>
+

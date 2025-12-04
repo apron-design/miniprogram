@@ -1,0 +1,16 @@
+@import '../../styles/variables.wxss';
+
+.apron-radio-group {
+  display: inline-flex;
+  gap: var(--spacing-4);
+}
+
+.apron-radio-group.horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.apron-radio-group.vertical {
+  flex-direction: column;
+}
+

@@ -1,0 +1,12 @@
+<view class="apron-collapse-item {{isActive ? 'active' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}">
+  <view class="apron-collapse-item__header" bindtap="handleClick">
+    <view class="apron-collapse-item__arrow {{isActive ? 'open' : ''}}">▶</view>
+    <view class="apron-collapse-item__title">{{title}}</view>
+  </view>
+  <view class="apron-collapse-item__content {{isActive ? 'active' : ''}}">
+    <view class="apron-collapse-item__body">
+      <slot></slot>
+    </view>
+  </view>
+</view>
+

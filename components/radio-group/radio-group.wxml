@@ -1,0 +1,4 @@
+<view class="apron-radio-group {{direction}} {{customClass}}" style="{{customStyle}}" role="radiogroup">
+  <slot></slot>
+</view>
+

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/components/button/button",
+    "pages/components/alert/alert",
+    "pages/components/message/message",
+    "pages/components/input/input",
+    "pages/components/modal/modal",
+    "pages/components/avatar/avatar",
+    "pages/components/badge/badge",
+    "pages/components/card/card",
+    "pages/components/divider/divider",
+    "pages/components/empty/empty",
+    "pages/components/image/image",
+    "pages/components/link/link",
+    "pages/components/space/space",
+    "pages/components/tag/tag",
+    "pages/components/checkbox/checkbox",
+    "pages/components/radio/radio",
+    "pages/components/select/select",
+    "pages/components/switch/switch",
+    "pages/components/textarea/textarea",
+    "pages/components/input-otp/input-otp",
+    "pages/components/row/row",
+    "pages/components/collapse/collapse",
+    "pages/components/tabs/tabs",
+    "pages/components/steps/steps",
+    "pages/components/timeline/timeline",
+    "pages/components/spin/spin",
+    "pages/components/skeleton/skeleton",
+    "pages/components/toast/toast",
+    "pages/components/popover/popover",
+    "pages/components/tooltip/tooltip",
+    "pages/components/cascader/cascader",
+    "pages/components/date-picker/date-picker",
+    "pages/components/drawer/drawer",
+    "pages/components/form/form",
+    "pages/components/pagination/pagination",
+    "pages/components/rate/rate",
+    "pages/components/responsive-modal/responsive-modal"
+  ],
+  "window": {
+    "navigationBarTitleText": "Apron Design",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#393939",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/components/button/button",
+        "text": "组件"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

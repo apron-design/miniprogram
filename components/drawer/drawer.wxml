@@ -1,0 +1,51 @@
+<view wx:if="{{isVisible}}" class="apron-drawer-root {{open && !isAnimating ? 'open' : ''}} {{isAnimating ? (open ? 'entering' : 'leaving') : ''}} {{customClass}}">
+  <view class="apron-drawer__overlay" bindtap="handleOverlayClick"></view>
+  <view
+    class="apron-drawer {{placement}} {{useMobileLayout ? 'mobile' : ''}}"
+    style="{{drawerStyle}}"
+    role="dialog"
+    aria-modal="true"
+  >
+    <view wx:if="{{!useMobileLayout && closable}}" class="apron-drawer__close" bindtap="handleClose">×</view>
+    
+    <view wx:if="{{useMobileLayout}}" class="apron-drawer__header mobile">
+      <view class="apron-drawer__header-left">
+        <view wx:if="{{showFooter && showCancel && footer === null}}">
+          <apron-button size="sm" variant="default" bindtap="handleClose">{{cancelText}}</apron-button>
+        </view>
+      </view>
+      <view wx:if="{{title}}" class="apron-drawer__title">{{title}}</view>
+      <view class="apron-drawer__header-right">
+        <view wx:if="{{showFooter && footer === null}}">
+          <apron-button size="sm" variant="primary" bindtap="handleOk">{{okText}}</apron-button>
+        </view>
+        <view wx:elif="{{closable}}" class="apron-drawer__close inline" bindtap="handleClose">×</view>
+      </view>
+    </view>
+    
+    <view wx:if="{{!useMobileLayout && title}}" class="apron-drawer__header">
+      <view class="apron-drawer__title">{{title}}</view>
+    </view>
+    
+    <view class="apron-drawer__body">
+      <slot></slot>
+    </view>
+    
+    <view wx:if="{{showFooter && footer !== null}}" class="apron-drawer__footer {{placement}} {{useMobileLayout ? 'mobile' : ''}}">
+      <view wx:if="{{footer === undefined}}">
+        <view wx:if="{{placement === 'right'}}">
+          <apron-button variant="primary" bindtap="handleOk">{{okText}}</apron-button>
+          <apron-button wx:if="{{showCancel}}" variant="default" bindtap="handleClose">{{cancelText}}</apron-button>
+        </view>
+        <view wx:else>
+          <apron-button wx:if="{{showCancel}}" variant="default" bindtap="handleClose">{{cancelText}}</apron-button>
+          <apron-button variant="primary" bindtap="handleOk">{{okText}}</apron-button>
+        </view>
+      </view>
+      <view wx:else>
+        <slot name="footer"></slot>
+      </view>
+    </view>
+  </view>
+</view>
+

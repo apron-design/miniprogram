@@ -1,0 +1,21 @@
+<label class="apron-checkbox {{disabled ? 'disabled' : ''}} {{checked ? 'checked' : ''}} {{indeterminate ? 'indeterminate' : ''}} {{!labelClickable ? 'label-not-clickable' : ''}} {{customClass}}">
+  <view class="apron-checkbox__input-wrapper">
+    <checkbox
+      id="{{checkboxId}}"
+      class="apron-checkbox__input"
+      checked="{{checked}}"
+      disabled="{{disabled}}"
+      value="{{value}}"
+      bindtap="handleChange"
+    />
+    <view class="apron-checkbox__box">
+      <view wx:if="{{indeterminate}}" class="apron-checkbox__icon apron-checkbox__icon--indeterminate">—</view>
+      <view wx:else class="apron-checkbox__icon apron-checkbox__icon--check">✓</view>
+    </view>
+  </view>
+  <view wx:if="{{label}}" class="apron-checkbox__label" bindtap="handleLabelClick">{{label}}</view>
+  <view wx:else class="apron-checkbox__label" bindtap="handleLabelClick">
+    <slot></slot>
+  </view>
+</label>
+

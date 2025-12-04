@@ -1,0 +1,19 @@
+<view class="apron-steps label-{{labelPlacement}} {{customClass}}" style="{{customStyle}}">
+  <view wx:for="{{processedItems}}" wx:key="index" wx:for-item="item" wx:for-index="idx" class="apron-step {{item.status}}">
+    <view wx:if="{{labelPlacement === 'top' || labelPlacement === 'both'}}" class="apron-step__label apron-step__label--top">
+      {{labelPlacement === 'both' ? (idx === 0 ? item.title : item.subtitle) : item.title}}
+    </view>
+    <view class="apron-step__content">
+      <view class="apron-step__icon">
+        <view wx:if="{{item.status === 'completed'}}" class="apron-step__icon-completed">✓</view>
+        <view wx:elif="{{item.status === 'current'}}" class="apron-step__icon-current">●</view>
+        <view wx:else class="apron-step__icon-pending">○</view>
+      </view>
+      <view wx:if="{{idx < processedItems.length - 1}}" class="apron-step__line {{item.lineClass}}"></view>
+    </view>
+    <view wx:if="{{labelPlacement === 'bottom' || labelPlacement === 'both'}}" class="apron-step__label apron-step__label--bottom">
+      {{labelPlacement === 'both' ? (idx === 0 ? item.subtitle : item.title) : item.title}}
+    </view>
+  </view>
+</view>
+

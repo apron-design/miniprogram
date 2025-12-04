@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "apron-avatar": "../avatar/avatar"
+  }
+}
+

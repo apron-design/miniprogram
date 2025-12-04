@@ -1,0 +1,7 @@
+@import '../../styles/variables.wxss';
+
+.apron-tabs__panel {
+  padding: var(--spacing-4);
+  transition: all 0.3s ease;
+}
+

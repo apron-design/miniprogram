@@ -1,0 +1,99 @@
+@import '../../styles/variables.wxss';
+
+.apron-checkbox {
+  display: inline-flex;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--font-size-base);
+}
+
+.apron-checkbox__input-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.apron-checkbox__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  z-index: 1;
+}
+
+.apron-checkbox__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #ffffff;
+  border: 2rpx solid var(--color-neutral-300);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.apron-checkbox.checked .apron-checkbox__box {
+  background-color: var(--color-success-500);
+  border-color: var(--color-success-500);
+}
+
+.apron-checkbox.indeterminate .apron-checkbox__box {
+  background-color: var(--color-success-500);
+  border-color: var(--color-success-500);
+}
+
+.apron-checkbox.disabled .apron-checkbox__box {
+  background-color: var(--color-neutral-100);
+  border-color: var(--color-neutral-200);
+  cursor: not-allowed;
+}
+
+.apron-checkbox.disabled.checked .apron-checkbox__box {
+  background-color: var(--color-neutral-200);
+}
+
+.apron-checkbox__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 32rpx;
+  font-weight: var(--font-weight-bold);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.apron-checkbox.checked .apron-checkbox__icon--check,
+.apron-checkbox.indeterminate .apron-checkbox__icon--indeterminate {
+  opacity: 1;
+}
+
+.apron-checkbox.disabled .apron-checkbox__icon {
+  color: var(--color-neutral-400);
+}
+
+.apron-checkbox__label {
+  margin-left: var(--spacing-2);
+  color: var(--color-primary-500);
+  line-height: 50rpx;
+  user-select: none;
+}
+
+.apron-checkbox.disabled .apron-checkbox__label {
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+}
+
+.apron-checkbox.label-not-clickable .apron-checkbox__label {
+  pointer-events: none;
+}
+

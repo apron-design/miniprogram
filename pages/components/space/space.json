@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Space 间距",
+  "usingComponents": {
+    "apron-space": "../../../components/space/space"
+  }
+}

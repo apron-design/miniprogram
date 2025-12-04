@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "InputOtp 验证码输入",
+  "usingComponents": {
+    "apron-input-otp": "../../../components/input-otp/input-otp"
+  }
+}

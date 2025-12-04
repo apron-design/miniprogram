@@ -1,0 +1,41 @@
+<apron-modal
+  wx:if="{{useModal}}"
+  open="{{open}}"
+  title="{{title}}"
+  closable="{{closable}}"
+  closeByOverlay="{{closeByOverlay}}"
+  onClose="handleClose"
+  onOk="handleOk"
+  width="{{width}}"
+  footer="{{footer}}"
+  showFooter="{{showFooter}}"
+  okText="{{okText}}"
+  cancelText="{{cancelText}}"
+  showCancel="{{showCancel}}"
+  centered="{{centered}}"
+  afterOpenChange="{{afterOpenChange}}"
+  customClass="{{customClass}}"
+>
+  <slot></slot>
+</apron-modal>
+<apron-drawer
+  wx:else
+  open="{{open}}"
+  title="{{title}}"
+  closable="{{closable}}"
+  closeByOverlay="{{closeByOverlay}}"
+  onClose="handleClose"
+  onOk="handleOk"
+  placement="{{drawerPlacement}}"
+  height="{{height}}"
+  footer="{{footer}}"
+  showFooter="{{showFooter}}"
+  okText="{{okText}}"
+  cancelText="{{cancelText}}"
+  showCancel="{{showCancel}}"
+  isMobile="{{true}}"
+  customClass="{{customClass}}"
+>
+  <slot></slot>
+</apron-drawer>
+

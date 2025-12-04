@@ -1,0 +1,18 @@
+<view class="apron-rate {{allowControl ? 'interactive' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}">
+  <view class="apron-rate__stars">
+    <view
+      wx:for="{{stars}}"
+      wx:key="index"
+      wx:for-item="star"
+      wx:for-index="idx"
+      class="apron-rate__star {{star.isActive ? 'active' : ''}} {{allowControl && !disabled ? 'interactive' : ''}}"
+      data-index="{{idx}}"
+      bindtap="handleClick"
+    >
+      <view class="apron-rate__star-bg">☆</view>
+      <view wx:if="{{star.isActive}}" class="apron-rate__star-fg" style="clip-path: {{star.clipPath}};">★</view>
+    </view>
+  </view>
+  <view wx:if="{{showValue}}" class="apron-rate__value">{{formattedValue}}</view>
+</view>
+

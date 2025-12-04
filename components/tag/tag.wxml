@@ -1,0 +1,7 @@
+<view class="apron-tag {{variant}} {{closable ? 'closable' : ''}} {{customClass}}" style="{{customStyle}}">
+  <view class="apron-tag__content">
+    <slot></slot>
+  </view>
+  <view wx:if="{{closable}}" class="apron-tag__close" bindtap="handleClose">×</view>
+</view>
+

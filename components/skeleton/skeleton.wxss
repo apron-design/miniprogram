@@ -1,0 +1,52 @@
+@import '../../styles/variables.wxss';
+
+.apron-skeleton {
+  width: 100%;
+}
+
+.apron-skeleton__content {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.apron-skeleton__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.apron-skeleton__avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: var(--color-neutral-200);
+  flex-shrink: 0;
+}
+
+.apron-skeleton__title {
+  height: 32rpx;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-neutral-200);
+  width: 40%;
+}
+
+.apron-skeleton__row {
+  height: 32rpx;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-neutral-200);
+}
+
+.apron-skeleton__avatar.animated,
+.apron-skeleton__title.animated,
+.apron-skeleton__row.animated {
+  background: linear-gradient(103.5deg, var(--color-neutral-200) 25%, var(--color-neutral-100) 50%, var(--color-neutral-200) 75%);
+  background-size: 400% 100%;
+  animation: apron-skeleton-loading 1.5s ease infinite;
+}
+
+@keyframes apron-skeleton-loading {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+

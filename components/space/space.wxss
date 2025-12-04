@@ -1,0 +1,35 @@
+@import '../../styles/variables.wxss';
+
+.apron-space {
+  display: inline-flex;
+  transition: all 0.3s ease;
+}
+
+.apron-space.horizontal {
+  flex-direction: row;
+}
+
+.apron-space.vertical {
+  flex-direction: column;
+}
+
+.apron-space.wrap {
+  flex-wrap: wrap;
+}
+
+.apron-space.align-start {
+  align-items: flex-start;
+}
+
+.apron-space.align-end {
+  align-items: flex-end;
+}
+
+.apron-space.align-center {
+  align-items: center;
+}
+
+.apron-space.align-baseline {
+  align-items: baseline;
+}
+

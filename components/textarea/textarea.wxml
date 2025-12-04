@@ -1,0 +1,20 @@
+<view class="apron-textarea {{isActive ? 'active' : ''}} {{disabled ? 'disabled' : ''}} {{customClass}}" style="{{customStyle}}">
+  <view class="apron-textarea__wrapper">
+    <textarea
+      class="apron-textarea__inner"
+      value="{{value}}"
+      placeholder="{{placeholder}}"
+      disabled="{{disabled}}"
+      maxlength="{{max}}"
+      auto-height="{{autoHeight}}"
+      bindinput="handleInput"
+      bindfocus="handleFocus"
+      bindblur="handleBlur"
+    />
+  </view>
+  <view wx:if="{{showFooter}}" class="apron-textarea__footer">
+    <view wx:if="{{max !== undefined}}" class="apron-textarea__count">{{currentLength}}/{{max}}</view>
+    <view wx:if="{{showClear}}" class="apron-textarea__clear-btn" bindtap="handleClear">×</view>
+  </view>
+</view>
+

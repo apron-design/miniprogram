@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Tabs 标签页",
+  "usingComponents": {
+    "apron-tabs": "../../../components/tabs/tabs"
+  }
+}

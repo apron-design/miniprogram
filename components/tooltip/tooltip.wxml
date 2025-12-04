@@ -1,0 +1,10 @@
+<view class="apron-tooltip-wrapper {{customClass}}" style="{{customStyle}}">
+  <view class="apron-tooltip__trigger" bindtouchstart="handleTriggerTouchStart" bindtouchend="handleTriggerTouchEnd">
+    <slot></slot>
+  </view>
+  <view wx:if="{{visible}}" class="apron-tooltip {{customTooltipClass}}" style="{{tooltipStyle}}">
+    <view class="apron-tooltip__arrow"></view>
+    <view class="apron-tooltip__content">{{content}}</view>
+  </view>
+</view>
+

@@ -1,0 +1,26 @@
+.page {
+  padding: var(--spacing-6);
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.section {
+  margin-bottom: var(--spacing-8);
+  background-color: #ffffff;
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+}
+
+.section-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+

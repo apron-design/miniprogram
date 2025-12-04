@@ -1,0 +1,13 @@
+<view wx:if="{{loading}}" class="apron-skeleton {{customClass}}" style="{{customStyle}}">
+  <view class="apron-skeleton__content">
+    <view class="apron-skeleton__avatar {{animated ? 'animated' : ''}}"></view>
+    <view class="apron-skeleton__info">
+      <view class="apron-skeleton__title {{animated ? 'animated' : ''}}"></view>
+      <view wx:for="{{rows}}" wx:key="index" wx:for-item="row" class="apron-skeleton__row {{animated ? 'animated' : ''}}" style="width: {{row.width}};"></view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <slot></slot>
+</view>
+

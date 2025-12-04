@@ -1,0 +1,4 @@
+<view class="apron-collapse {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+</view>
+

@@ -1,0 +1,61 @@
+@import '../../styles/variables.wxss';
+
+.apron-tabs__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  padding: 0 30rpx;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary-300);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.apron-tabs__tab:active:not(.disabled) {
+  color: var(--color-primary-900);
+}
+
+.apron-tabs__tab.active {
+  color: var(--color-primary-900);
+  font-weight: var(--font-weight-semibold);
+}
+
+.apron-tabs__tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background-color: var(--color-primary-500);
+}
+
+.apron-tabs__tab.disabled {
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+}
+
+/* Capsule 模式 */
+.apron-tabs.capsule .apron-tabs__tab {
+  height: 60rpx;
+  padding: 0 24rpx;
+  margin-right: 16rpx;
+  border-radius: 30rpx;
+  background-color: transparent;
+}
+
+.apron-tabs.capsule .apron-tabs__tab.active {
+  background-color: var(--color-primary-900);
+  color: #ffffff;
+}
+
+.apron-tabs.capsule .apron-tabs__tab.active::after {
+  display: none;
+}
+

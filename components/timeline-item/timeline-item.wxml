@@ -1,0 +1,32 @@
+<view class="apron-timeline-item dot-{{dotColor}} {{customClass}}" style="{{customStyle}}">
+  <view wx:if="{{side === 'both'}}" class="apron-timeline-item__left">
+    <view class="apron-timeline-item__content">
+      <view wx:if="{{title}}" class="apron-timeline-item__title">{{title}}</view>
+      <view wx:if="{{content}}" class="apron-timeline-item__text">{{content}}</view>
+      <view wx:if="{{date}}" class="apron-timeline-item__date">{{date}}</view>
+      <view wx:if="{{!content}}">
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+  <view class="apron-timeline-item__dot"></view>
+  <view wx:if="{{side === 'both'}}" class="apron-timeline-item__right">
+    <view class="apron-timeline-item__content">
+      <view wx:if="{{title}}" class="apron-timeline-item__title">{{title}}</view>
+      <view wx:if="{{content}}" class="apron-timeline-item__text">{{content}}</view>
+      <view wx:if="{{date}}" class="apron-timeline-item__date">{{date}}</view>
+      <view wx:if="{{!content}}">
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{side !== 'both'}}" class="apron-timeline-item__content">
+    <view wx:if="{{title}}" class="apron-timeline-item__title">{{title}}</view>
+    <view wx:if="{{content}}" class="apron-timeline-item__text">{{content}}</view>
+    <view wx:if="{{date}}" class="apron-timeline-item__date">{{date}}</view>
+    <view wx:if="{{!content}}">
+      <slot></slot>
+    </view>
+  </view>
+</view>
+

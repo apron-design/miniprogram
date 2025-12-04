@@ -1,0 +1,4 @@
+<view class="apron-avatar-group {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+</view>
+

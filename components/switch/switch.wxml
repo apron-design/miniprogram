@@ -1,0 +1,13 @@
+<label class="apron-switch {{size}} {{variant}} {{disabled ? 'disabled' : ''}} {{checked ? 'checked' : ''}} {{customClass}}" style="{{customStyle}}">
+  <checkbox
+    id="{{switchId}}"
+    class="apron-switch__input"
+    checked="{{checked}}"
+    disabled="{{disabled}}"
+    bindtap="handleChange"
+  />
+  <view class="apron-switch__track">
+    <view class="apron-switch__thumb"></view>
+  </view>
+</label>
+

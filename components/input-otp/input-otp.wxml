@@ -1,0 +1,25 @@
+<view class="apron-input-otp {{size}} {{square ? 'square' : ''}} {{isFocused ? 'focused' : ''}} {{disabled ? 'disabled' : ''}} {{status !== 'default' ? status : ''}} {{customClass}}" style="{{customStyle}}" bindtap="handleContainerClick">
+  <input
+    class="apron-input-otp__hidden-input"
+    type="{{inputType}}"
+    value="{{inputValue}}"
+    disabled="{{disabled}}"
+    maxlength="{{inputCount}}"
+    bindinput="handleInput"
+    bindfocus="handleFocus"
+    bindblur="handleBlur"
+  />
+  <view class="apron-input-otp__display">
+    <view wx:for="{{formatSlots}}" wx:key="index" wx:for-item="slot" wx:for-index="idx">
+      <view wx:if="{{slot.type === 'separator'}}" class="apron-input-otp__separator">{{slot.char}}</view>
+      <view
+        wx:else
+        class="apron-input-otp__slot {{slot.isActive ? 'active' : ''}} {{slot.isFilled ? 'filled' : ''}}"
+      >
+        {{slot.char}}
+        <view wx:if="{{slot.isActive && !slot.isFilled}}" class="apron-input-otp__cursor"></view>
+      </view>
+    </view>
+  </view>
+</view>
+

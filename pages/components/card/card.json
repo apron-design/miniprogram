@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Card 卡片",
+  "usingComponents": {
+    "apron-card": "../../../components/card/card",
+    "apron-card-header": "../../../components/card-header/card-header",
+    "apron-card-body": "../../../components/card-body/card-body",
+    "apron-card-footer": "../../../components/card-footer/card-footer"
+  }
+}
+

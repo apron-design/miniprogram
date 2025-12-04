@@ -1,0 +1,23 @@
+@import '../../styles/variables.wxss';
+
+.apron-form {
+  width: 100%;
+}
+
+.apron-form.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.apron-form.horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.apron-form.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+

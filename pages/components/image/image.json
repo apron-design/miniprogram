@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Image 图片",
+  "usingComponents": {
+    "apron-image": "../../../components/image/image"
+  }
+}

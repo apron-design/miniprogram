@@ -1,0 +1,11 @@
+<view class="apron-divider {{dashed ? 'dashed' : ''}} {{hasText ? 'with-text' : ''}} {{hasText ? align : ''}} {{customClass}}" style="{{customStyle}}" role="separator">
+  <view wx:if="{{!hasText}}" class="apron-divider__line"></view>
+  <view wx:else>
+    <view class="apron-divider__line apron-divider__line--left"></view>
+    <view class="apron-divider__text">
+      <slot></slot>
+    </view>
+    <view class="apron-divider__line apron-divider__line--right"></view>
+  </view>
+</view>
+

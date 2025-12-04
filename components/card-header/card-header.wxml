@@ -1,0 +1,8 @@
+<view class="apron-card__header {{customClass}}" style="{{customStyle}}">
+  <view wx:if="{{title}}" class="apron-card__header-title">{{title}}</view>
+  <slot></slot>
+  <view wx:if="{{extra}}" class="apron-card__header-extra">
+    <slot name="extra"></slot>
+  </view>
+</view>
+

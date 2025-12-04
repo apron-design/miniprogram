@@ -1,0 +1,23 @@
+<view class="apron-select {{isActive ? 'active' : ''}} {{isOpen ? 'open' : ''}} {{disabled ? 'disabled' : ''}} {{loading ? 'loading' : ''}} {{inflow ? 'inflow' : ''}} {{customClass}}" style="{{customStyle}}" bindtap="toggleDropdown">
+  <view class="apron-select__trigger">
+    <view class="apron-select__value {{!hasValue ? 'placeholder' : ''}}">{{displayText || placeholder}}</view>
+    <view class="apron-select__suffix">
+      <view wx:if="{{loading}}" class="apron-select__loading-icon">⟳</view>
+      <view wx:else class="apron-select__arrow {{isOpen ? 'open' : ''}}">▼</view>
+    </view>
+  </view>
+  <view wx:if="{{isOpen && !loading}}" class="apron-select__dropdown">
+    <view class="apron-select__options">
+      <view
+        wx:for="{{options}}"
+        wx:key="value"
+        class="apron-select__option {{item.value === currentValue ? 'selected' : ''}} {{item.disabled ? 'disabled' : ''}}"
+        data-value="{{item.value}}"
+        bindtap="handleSelect"
+      >
+        {{item.label}}
+      </view>
+    </view>
+  </view>
+</view>
+

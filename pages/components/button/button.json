@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Button 按钮",
+  "usingComponents": {
+    "apron-button": "../../../components/button/button"
+  }
+}
+

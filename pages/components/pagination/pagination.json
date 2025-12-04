@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Pagination 分页",
+  "usingComponents": {
+    "apron-pagination": "../../../components/pagination/pagination"
+  }
+}

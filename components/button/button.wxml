@@ -1,0 +1,17 @@
+<button
+  class="apron-button {{variant}} {{size}} {{dashed ? 'dashed' : ''}} {{danger ? 'danger' : ''}} {{block ? 'block' : ''}} {{loading ? 'loading' : ''}} {{customClass}}"
+  disabled="{{disabled || loading}}"
+  bindtap="handleTap"
+  hover-class="{{!disabled && !loading ? 'apron-button--hover' : ''}}"
+  style="{{customStyle}}"
+>
+  <view class="apron-button__content">
+    <view wx:if="{{loading}}" class="apron-button__spinner">
+      <view class="apron-button__spinner-circle"></view>
+    </view>
+    <view wx:if="{{!loading}}" class="apron-button__text">
+      <slot></slot>
+    </view>
+  </view>
+</button>
+

@@ -1,0 +1,7 @@
+<view class="apron-badge {{customClass}}" style="{{customStyle}}">
+  <slot></slot>
+  <view wx:if="{{dot}}" class="apron-badge__dot"></view>
+  <view wx:elif="{{content !== undefined}}" class="apron-badge__content">{{content}}</view>
+  <view wx:elif="{{count !== undefined && count > 0 && displayCount}}" class="apron-badge__count {{isMultiDigit ? 'multi' : ''}}">{{displayCount}}</view>
+</view>
+

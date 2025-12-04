@@ -1,0 +1,4 @@
+<view class="apron-col {{span !== undefined ? 'apron-col-' + span : ''}} {{offset !== undefined ? 'apron-col-offset-' + offset : ''}} {{order !== undefined ? 'apron-col-order-' + order : ''}} {{push !== undefined ? 'apron-col-push-' + push : ''}} {{pull !== undefined ? 'apron-col-pull-' + pull : ''}} {{sizeClassNames}} {{customClass}}" style="padding-left: {{horizontalGutter}}rpx; padding-right: {{horizontalGutter}}rpx; {{flexStyle}} {{customStyle}}">
+  <slot></slot>
+</view>
+
